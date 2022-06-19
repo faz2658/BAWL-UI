@@ -12,7 +12,7 @@
   "bugs": {
     "url": "https://github.com/creativetimofficial/blk-design-system-react/issues"
   },
-  "homepage": "https://demos.creative-tim.com/blk-design-system-react/#/",
+  "homepage": "https://faz2658.github.io/BAWL-UI/",
   "keywords": [
     "react",
     "reactjs",
@@ -62,6 +62,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build && gulp licenses",
     "test": "react-scripts test",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "eject": "react-scripts eject",
     "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && npm start",
     "compile-sass": "node-sass --importer node_modules/node-sass-package-importer/dist/cli.js src/assets/scss/blk-design-system-react.scss src/assets/css/blk-design-system-react.css",
@@ -85,5 +87,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
   }
 }
